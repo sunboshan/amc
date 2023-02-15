@@ -15,6 +15,7 @@ def get_subtitle(subtitles):
 
 def get_showtime(date):
     url = 'https://www.amctheatres.com/movie-theatres/seattle-tacoma/amc-alderwood-mall-16/showtimes/all/{}/amc-alderwood-mall-16/all'.format(date)
+    # url = 'https://www.amctheatres.com/movie-theatres/seattle-tacoma/amc-pacific-place-11/showtimes/all/{}/amc-pacific-place-11/all'.format(date)
     
     response = requests.get(url)
     soup = BeautifulSoup(response.content, "html.parser")
